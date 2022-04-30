@@ -12,13 +12,13 @@ creating frames of the input video.
 int imges_ln = -2;	
 //######## rm -rf dir1
 char cmd_1[] = "mkdir tmp3";
-char cmd_2[] = "cp teapot.mp4 tmp3/teapot.mp4";
+char cmd_2[] = "cp input_video.mp4 tmp3/input_video.mp4";
 //char cmd_3[] = "cd tmp3";
 //char cmd_4[] = "ffmpeg -i teapot.mp4 image%2d.png";
 //char cmd_4[] = "ffmpeg -i tmp3/teapot.mp4 -vf fps=15 tmp3/image%d.bmp";
 //char cmd_4[] = "ffmpeg -i tmp3/teapot.mp4 tmp3/image%d.bmp";
-char cmd_4[] = "ffmpeg -i tmp3/teapot.mp4 -b:v 200000 tmp3/image%d.bmp";
-char cmd_5[] = "rm tmp3/teapot.mp4";
+char cmd_4[] = "ffmpeg -i tmp3/input_video.mp4 -b:v 200000 tmp3/image%d.bmp";
+char cmd_5[] = "rm tmp3/input_video.mp4";
 char cmd_6[] = "rm -rf tmp3";
 
 system(cmd_6);
