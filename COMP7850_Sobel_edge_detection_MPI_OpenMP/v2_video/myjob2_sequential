@@ -1,0 +1,12 @@
+#!/bin/bash
+#$ -cwd
+#$ -o /dev/null
+#$ -e /dev/null
+# Set the number of processes here:
+#$ -pe mpi 1
+# Set the number of processors (if different from the above) here:
+setenv OMP_NUM_THREADS 1
+# Change the name of the execuatable here:
+gcc cmd_run.c -o ff
+ff
+./filter21 maneet.jpeg cns.jpeg 1> output_sequential.txt

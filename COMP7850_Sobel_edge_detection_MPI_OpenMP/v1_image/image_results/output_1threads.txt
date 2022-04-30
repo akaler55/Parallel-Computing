@@ -1,0 +1,7 @@
+Loaded image with height 270 and width 480 
+
+Number of threads : 1
+
+
+Total Execution time (in sec):0.015416
+Sobel edge filter was sucessfully applied to image1.bmp 

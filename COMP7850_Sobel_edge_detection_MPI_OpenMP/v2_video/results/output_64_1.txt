@@ -1,0 +1,8 @@
+No. of Processes: 64
+
+ Total image Frames : 144
+
+Number of threads : 1
+
+
+Execution time: 0.334877
