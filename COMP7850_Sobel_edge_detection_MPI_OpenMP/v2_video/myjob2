@@ -3,62 +3,10 @@
 #$ -o /dev/null
 #$ -e /dev/null
 # Set the number of processes here:
-#$ -pe mpi 32
-# Set the number of processors (if different from the above) here:
-setenv OMP_NUM_THREADS 1
-# Change the name of the execuatable here:
-gcc cmd_run.c -o ff
-ff
-./filter21 maneet.jpeg cns.jpeg 32> results/output_32_1.txt
-
-#!/bin/bash
-#$ -cwd
-#$ -o /dev/null
-#$ -e /dev/null
-# Set the number of processes here:
-#$ -pe mpi 32
-# Set the number of processors (if different from the above) here:
-setenv OMP_NUM_THREADS 4
-# Change the name of the execuatable here:
-gcc cmd_run.c -o ff
-ff
-./filter21 maneet.jpeg cns.jpeg 32> results/output_32_4.txt
-
-#!/bin/bash
-#$ -cwd
-#$ -o /dev/null
-#$ -e /dev/null
-# Set the number of processes here:
-#$ -pe mpi 32
-# Set the number of processors (if different from the above) here:
-setenv OMP_NUM_THREADS 8
-# Change the name of the execuatable here:
-gcc cmd_run.c -o ff
-ff
-./filter21 maneet.jpeg cns.jpeg 32> results/output_32_8.txt
-
-#!/bin/bash
-#$ -cwd
-#$ -o /dev/null
-#$ -e /dev/null
-# Set the number of processes here:
-#$ -pe mpi 32
+#$ -pe mpi 4
 # Set the number of processors (if different from the above) here:
 setenv OMP_NUM_THREADS 16
 # Change the name of the execuatable here:
 gcc cmd_run.c -o ff
 ff
-./filter21 maneet.jpeg cns.jpeg 32> results/output_32_16.txt
-
-#!/bin/bash
-#$ -cwd
-#$ -o /dev/null
-#$ -e /dev/null
-# Set the number of processes here:
-#$ -pe mpi 32
-# Set the number of processors (if different from the above) here:
-setenv OMP_NUM_THREADS 32
-# Change the name of the execuatable here:
-gcc cmd_run.c -o ff
-ff
-./filter21 maneet.jpeg cns.jpeg 32> results/output_32_32.txt
+./filter21 maneet.jpeg cns.jpeg 4> results/output_4_16.txt
