@@ -1,2 +1,5 @@
-V1 folder is to run code for one image.
-V2 code is to run for video input.
+There are two repositiories in the project "v1_image" and "v2_image"
+
+v1_image: It applies the Sobel Feldman operator on the image on the parallel architecture.
+
+v2_image: It applies the the Sobel Feldman operator for edge detection on the input video based on hybrid parallel architecture.
